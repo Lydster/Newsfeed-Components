@@ -26,4 +26,43 @@ class Article {
 
 */
 
-let articles;
+let articles = document.querySelectorAll('.article');
+articles.forEach(article => new Article(article))
+
+
+
+
+
+
+/* 
+class Panel {
+  // constructor
+  constructor(panel) {
+    // panel is the individual DOM panel
+    this.panelButtons = panel.querySelector('.panel-buttons');
+    this.panelBtnOpen = panel.querySelector('.panel-btn-open');
+    this.panelBtnClose = panel.querySelector('.panel-btn-close');
+    this.panelParagraph = panel.querySelectorAll(".panel-content p");
+    
+    
+    
+    //this.panelButtons.addEventListener('click', this.togglePanel.bind(this));
+    this.panelButtons.addEventListener('click', () => this.togglePanel());
+    
+  }
+  // methods
+  togglePanel() {
+    console.log(this.panelBtnOpen);
+    this.panelBtnOpen.classList.toggle('hide-btn');
+    this.panelBtnClose.classList.toggle('hide-btn');
+    this.panelParagraph.forEach(element => element.classList.toggle('toggle-on'))
+  }
+}
+
+const panels = document.querySelectorAll('.panel');
+panels.forEach( panel => new Panel(panel));
+
+
+// DOM panels -> loop (forEach) -> forEach will iterate over each DOM panel individually -> create a new Panel class -> creates a new panel object -> returned back to the dom
+
+*/
