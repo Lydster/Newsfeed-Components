@@ -2,9 +2,10 @@
 
 const toggleMenu = () => {
   menu.classList.toggle('menu--open');
-  console.log('sweet victory. way to go lyd')
-  // Toggle the "menu--open" class on your menu refence. 
 }
+ 
+  // Toggle the "menu--open" class on your menu refence. 
+
 
 // Start Here: Create a reference to the ".menu" class
 
