@@ -11,8 +11,6 @@ class Article {
     // Set a click handler on the expandButton reference, calling the expandArticle method.
     this.expandButton.addEventListener('click', () => this.expandArticle());
 
-
-
   }
 
   expandArticle() {
@@ -28,7 +26,8 @@ class Article {
   } 
   
 }
- 
+
+
 
 /* START HERE: 
 
